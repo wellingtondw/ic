@@ -1,10 +1,15 @@
-import Main from "./components/Main"
+import { ThemeProvider } from "styled-components"
 
-function App() {
-  return <Main />
+import theme from "./styles/theme"
+
+import { GlobalStyles } from "./styles/global"
+import { Main } from "./components/Main"
+
+export function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <Main />
+      <GlobalStyles />
+    </ThemeProvider>
+  )
 }
-
-export default App
-
-
-
