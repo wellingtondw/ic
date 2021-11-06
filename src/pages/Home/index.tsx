@@ -1,4 +1,7 @@
+import Button from "../../components/Button"
 
 export const Home = () => {
-  return <h1>Home Page</h1>
+  return (
+    <Button variant="dark">choose your path again, Padawan</Button>
+  )
 }

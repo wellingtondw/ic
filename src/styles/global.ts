@@ -17,9 +17,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ${({ theme }) => css`
-    body {
+    body, input, button {
       font-family: ${theme.font.main.family};
       font-size: ${theme.font.sizes.normal};
     }
   `}
+
+  button {
+    cursor: pointer;
+  }
 `
