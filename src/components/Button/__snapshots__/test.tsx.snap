@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0.625rem;
+  position: relative;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  background: #2C97D1;
+  color: #FFFFFF;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0:hover:not(:disabled) {
+  background: #298ec4;
+}
+
+.c1 {
+  visibility: visible;
+}
+
+<button
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    choose your path again, Padawan
+  </div>
+</button>
+`;

@@ -18,7 +18,7 @@ export type ButtonProps = {
   spinnerVariant?: SpinnerVariantProps
 } & ButtonTypes
 
-const Button = ({
+export const Button = ({
     children,
     variant = 'primary',
     spinnerVariant = 'primary',
@@ -27,7 +27,7 @@ const Button = ({
   }: ButtonProps) => (
   <S.Wrapper variant={variant} {...rest}>
     {loading && (
-      <Spinner variant={spinnerVariant}/>
+      <Spinner variant={spinnerVariant} aria-label='loading' />
     )}
 
     <S.Content isLoading={loading}>
@@ -35,5 +35,3 @@ const Button = ({
     </S.Content>
   </S.Wrapper>
 )
-
-export default Button

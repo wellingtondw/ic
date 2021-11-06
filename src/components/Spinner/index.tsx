@@ -4,6 +4,6 @@ export type SpinnerProps = {
   variant?: 'primary' | 'secondary'
 }
 
-export const Spinner = ({ variant = 'primary' }: SpinnerProps) => {
-  return <S.Spinner variant={variant} />
+export const Spinner = ({ variant = 'primary', ...rest }: SpinnerProps) => {
+  return <S.Spinner variant={variant} {...rest} />
 }
