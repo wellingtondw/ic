@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> should render correctly 1`] = `
+.c0 {
+  -webkit-animation: fvtopB 1s linear infinite;
+  animation: fvtopB 1s linear infinite;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  background: transparent;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-left: 2px solid #2C97D1;
+}
+
+<div
+  class="c0"
+/>
+`;
