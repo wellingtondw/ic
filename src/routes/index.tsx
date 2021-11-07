@@ -1,16 +1,17 @@
-import React from 'react';
 import {
   Route,
   Routes as Switch
 } from "react-router-dom";
 
 import { Home } from '../pages/Home';
+import { SelectedSide } from '../pages/SelectedSide'
 
 const Routes: React.FC = () => {
   return (
     <Switch>
       <Route path="/" element={<Home />} />
-      <Route path="/your-side" element={<h1>Hi</h1>} />
+      <Route path="/darth-vader" element={<SelectedSide />} />
+      <Route path="/luke-skywalker" element={<SelectedSide />} />
     </Switch>
   );
 };

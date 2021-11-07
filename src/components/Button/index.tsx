@@ -1,13 +1,10 @@
-import React, {
+import {
   ButtonHTMLAttributes
 } from 'react'
 
 import { Spinner, SpinnerProps } from '../Spinner'
 
 import * as S from './styles'
-
-export type ButtonTypes =
-  | ButtonHTMLAttributes<HTMLButtonElement>
 
 type SpinnerVariantProps = SpinnerProps['variant']
 
@@ -16,7 +13,7 @@ export type ButtonProps = {
   variant?: 'primary' | 'dark' | 'light'
   loading?: boolean
   spinnerVariant?: SpinnerVariantProps
-} & ButtonTypes
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = ({
     children,
