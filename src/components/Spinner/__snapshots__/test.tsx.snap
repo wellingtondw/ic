@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Spinner /> should render correctly 1`] = `
+exports[`<Spinner /> should be able to render correctly 1`] = `
 .c0 {
   -webkit-animation: fvtopB 1s linear infinite;
   animation: fvtopB 1s linear infinite;

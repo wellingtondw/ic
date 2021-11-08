@@ -6,11 +6,11 @@ export default {
     main: {
       family: "'Montserrat', sans-serif",
       normal: 400,
-      bold: 700,
+      bold: 700
     },
     secondary: {
       family: "'Lato', sans-serif",
-      bold: 700,
+      bold: 700
     },
     sizes: {
       xsmall: '0.75rem',
@@ -29,6 +29,7 @@ export default {
     yellow: '#FBFE63'
   },
   spacings: {
+    xxxsmall: '0.25rem', // 4px
     xxsmall: '0.5rem', //8px
     xsmall: '1rem', //16px
     small: '1.5rem', //24px

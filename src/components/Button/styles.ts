@@ -1,13 +1,13 @@
 import styled, { css, DefaultTheme } from 'styled-components'
-import { darken } from 'polished';
+import { darken } from 'polished'
 import { Spinner } from '../Spinner/styles'
 
 import { ButtonProps } from '.'
 
-type WrapperProps =  Pick<ButtonProps, 'variant'>
+type WrapperProps = Pick<ButtonProps, 'variant'>
 
 const wrapperModifiers = {
-  primary:  (theme: DefaultTheme) => css`
+  primary: (theme: DefaultTheme) => css`
     background: ${theme.colors.primary};
     color: ${theme.colors.white};
 
@@ -55,7 +55,7 @@ export const Wrapper = styled.button<WrapperProps>`
     }
 
     ${!!variant && wrapperModifiers[variant](theme)}
-`}
+  `}
 `
 type ContentProps = {
   isLoading?: boolean
@@ -66,4 +66,3 @@ export const Content = styled.div<ContentProps>`
     visibility: ${isLoading ? 'hidden' : 'visible'};
   `}
 `
-

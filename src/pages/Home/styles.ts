@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Button as SButton } from "../../components/Button"
+import { Button as SButton } from '../../components/Button'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`

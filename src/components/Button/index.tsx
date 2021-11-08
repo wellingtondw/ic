@@ -1,6 +1,4 @@
-import {
-  ButtonHTMLAttributes
-} from 'react'
+import { ButtonHTMLAttributes } from 'react'
 
 import { Spinner, SpinnerProps } from '../Spinner'
 
@@ -16,19 +14,15 @@ export type ButtonProps = {
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = ({
-    children,
-    variant = 'primary',
-    spinnerVariant = 'primary',
-    loading = false,
-    ...rest
-  }: ButtonProps) => (
+  children,
+  variant = 'primary',
+  spinnerVariant = 'primary',
+  loading = false,
+  ...rest
+}: ButtonProps) => (
   <S.Wrapper variant={variant} {...rest}>
-    {loading && (
-      <Spinner variant={spinnerVariant} aria-label='loading' />
-    )}
+    {loading && <Spinner variant={spinnerVariant} aria-label="loading" />}
 
-    <S.Content isLoading={loading}>
-      {children}
-    </S.Content>
+    <S.Content isLoading={loading}>{children}</S.Content>
   </S.Wrapper>
 )

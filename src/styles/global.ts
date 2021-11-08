@@ -1,7 +1,4 @@
-import {
-  createGlobalStyle,
-  css,
-} from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -17,7 +14,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ${({ theme }) => css`
-    body, input, button {
+    body,
+    input,
+    button {
       font-family: ${theme.font.main.family};
       font-size: ${theme.font.sizes.normal};
     }

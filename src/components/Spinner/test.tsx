@@ -1,18 +1,17 @@
-import { screen } from '@testing-library/react'
 import { renderWithTheme } from '../../utils/tests/helpers'
 import theme from '../../styles/theme'
 import { darken } from 'polished'
 
-import {Spinner} from '.'
+import { Spinner } from '.'
 
 describe('<Spinner />', () => {
-  it('should render correctly', () => {
+  it('should be able to render correctly', () => {
     const { container } = renderWithTheme(<Spinner />)
 
     expect(container.firstChild).toMatchSnapshot()
   })
 
-  it('should render with primary variant', () => {
+  it('should be able to render with primary variant', () => {
     const { container } = renderWithTheme(<Spinner />)
 
     expect(container.firstChild).toHaveStyle({
@@ -23,8 +22,8 @@ describe('<Spinner />', () => {
     })
   })
 
-  it('should render with secondary variant', () => {
-    const { container } = renderWithTheme(<Spinner variant='secondary' />)
+  it('should be able to render with secondary variant', () => {
+    const { container } = renderWithTheme(<Spinner variant="secondary" />)
 
     expect(container.firstChild).toHaveStyle({
       'border-top': `1px solid ${theme.colors.primary}`,
@@ -33,6 +32,4 @@ describe('<Spinner />', () => {
       'border-left': `2px solid ${darken(0.2, theme.colors.primary)}`
     })
   })
-
-
 })

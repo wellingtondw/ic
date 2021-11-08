@@ -1,6 +1,6 @@
-import styled, { css, DefaultTheme, keyframes } from "styled-components";
+import styled, { css, DefaultTheme, keyframes } from 'styled-components'
 import { darken } from 'polished'
-import { SpinnerProps } from ".";
+import { SpinnerProps } from '.'
 
 const rotate360 = keyframes`
   from {
@@ -9,7 +9,7 @@ const rotate360 = keyframes`
   to {
     transform: rotate(360deg);
   }
-`;
+`
 
 const spinnerModifiers = {
   primary: (theme: DefaultTheme) => css`
@@ -37,5 +37,4 @@ export const Spinner = styled.div<SpinnerProps>`
 
     ${!!variant && spinnerModifiers[variant](theme)}
   `}
-`;
-
+`
