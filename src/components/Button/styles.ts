@@ -38,7 +38,7 @@ export const Wrapper = styled.button<WrapperProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: ${theme.spacings.xsmall} ${theme.spacings.medium};
+    padding: ${theme.spacings.xsmall};
     font-weight: bold;
     border: 0;
     border-radius: ${theme.border.radius};
@@ -55,6 +55,10 @@ export const Wrapper = styled.button<WrapperProps>`
     }
 
     ${!!variant && wrapperModifiers[variant](theme)}
+
+    @media (min-width: 480px) {
+      padding: ${theme.spacings.xsmall} ${theme.spacings.medium};
+    }
   `}
 `
 type ContentProps = {

@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636333361438" clover="3.2.0">
-  <project timestamp="1636333361439" name="All files">
-    <metrics statements="17" coveredstatements="15" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="8" elements="29" coveredelements="26" complexity="0" loc="17" ncloc="17" packages="4" files="6" classes="6"/>
-    <package name="components.BackButton">
-      <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="4"/>
-      <file name="index.tsx" path="/home/wellington/challenges/iclinic/src/components/BackButton/index.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
+<coverage generated="1636402471454" clover="3.2.0">
+  <project timestamp="1636402471454" name="All files">
+    <metrics statements="29" coveredstatements="20" conditionals="13" coveredconditionals="9" methods="15" coveredmethods="11" elements="57" coveredelements="40" complexity="0" loc="29" ncloc="29" packages="6" files="10" classes="10"/>
+    <package name="components.Avatar">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/home/wellington/challenges/iclinic/src/components/Avatar/index.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
       </file>
-      <file name="styles.ts" path="/home/wellington/challenges/iclinic/src/components/BackButton/styles.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
+      <file name="styles.ts" path="/home/wellington/challenges/iclinic/src/components/Avatar/styles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Button">
+      <metrics statements="10" coveredstatements="10" conditionals="9" coveredconditionals="9" methods="6" coveredmethods="6"/>
+      <file name="index.tsx" path="/home/wellington/challenges/iclinic/src/components/Button/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/home/wellington/challenges/iclinic/src/components/Button/styles.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="6" type="stmt"/>
       </file>
     </package>
     <package name="components.Header">
@@ -34,11 +48,27 @@
       </file>
     </package>
     <package name="pages.SelectedSide">
-      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="9" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="index.tsx" path="/home/wellington/challenges/iclinic/src/pages/SelectedSide/index.tsx">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/home/wellington/challenges/iclinic/src/pages/SelectedSide/styles.ts">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="types">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="jest-styled-components.d.ts" path="/home/wellington/challenges/iclinic/src/types/jest-styled-components.d.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="utils.tests">

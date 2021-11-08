@@ -10,6 +10,14 @@ describe('<Button />', () => {
       <Button>choose your path again, Padawan</Button>
     )
 
+    expect(container.firstChild).toHaveStyleRule(
+      'padding',
+      `${theme.spacings.xsmall} ${theme.spacings.medium}`,
+      {
+        media: '(min-width: 480px)'
+      }
+    )
+
     expect(container.firstChild).toMatchSnapshot()
   })
 

@@ -8,10 +8,6 @@ export default {
       normal: 400,
       bold: 700
     },
-    secondary: {
-      family: "'Lato', sans-serif",
-      bold: 700
-    },
     sizes: {
       xsmall: '0.75rem',
       small: '0.875rem',
@@ -36,7 +32,8 @@ export default {
     medium: '2rem', // 32px
     large: '2.5rem', //40px
     xlarge: '3rem', //48px
-    xxlarge: '3.5rem' //56px
+    xxlarge: '3.5rem', //56px
+    xxxlarge: '4rem' //64px
   },
   transition: {
     default: '0.3s ease-in-out',
