@@ -13,7 +13,7 @@ export const Header = ({ backButtonVariant, ...rest }: HeaderProps) => {
 
   return (
     <S.Wrapper {...rest}>
-      <BackButton variant={backButtonVariant} onClick={() => navigate(-1)} />
+      <BackButton variant={backButtonVariant} onClick={() => navigate('/')} />
     </S.Wrapper>
   )
 }

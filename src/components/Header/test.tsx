@@ -35,6 +35,6 @@ describe('<Header />', () => {
     fireEvent.click(buttonEl)
 
     expect(mockedNavigate).toHaveBeenCalledTimes(1)
-    expect(mockedNavigate).toHaveBeenCalledWith(-1)
+    expect(mockedNavigate).toHaveBeenCalledWith('/')
   })
 })

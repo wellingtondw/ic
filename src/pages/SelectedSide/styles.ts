@@ -34,7 +34,6 @@ export const Main = styled.main`
     }
 
     @media (min-width: 768px) {
-      justify-content: flex-start;
       height: auto;
 
       ${Avatar.Wrapper} {

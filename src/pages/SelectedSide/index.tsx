@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import darthVaderImg from '../../assets/images/darth-vader.png'
@@ -8,10 +7,13 @@ import { Avatar } from '../../components/Avatar'
 import { Button } from '../../components/Button'
 import { Header } from '../../components/Header'
 
+import { useSide } from '../../context/side'
+
 import * as S from './styles'
 
 export const SelectedSide = () => {
   const { pathname } = useLocation()
+  const { loading, getYourSide } = useSide()
   const isDarthSide = pathname.replace('/', '') === 'darth-vader'
 
   return (
@@ -25,7 +27,12 @@ export const SelectedSide = () => {
             isDarthSide ? 'Darth Vader' : 'Luke Skywalker'
           } `}</strong>
         </S.MasterTitle>
-        <Button variant={isDarthSide ? 'light' : 'dark'}>
+        <Button
+          loading={loading}
+          disabled={loading}
+          onClick={getYourSide}
+          variant={isDarthSide ? 'light' : 'dark'}
+        >
           choose your path again, Padawan
         </Button>
       </S.Main>
