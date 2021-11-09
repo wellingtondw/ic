@@ -15,6 +15,7 @@ const SideContext = createContext<SideContextData>({} as SideContextData)
 const SideProvider = ({ children }: SideProviderProps) => {
   const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
+
   const baseUrl = 'https://swapi.dev/api/people'
 
   const getYourSide = useCallback(async () => {
@@ -26,6 +27,7 @@ const SideProvider = ({ children }: SideProviderProps) => {
         fetch(`${baseUrl}/1`),
         fetch(`${baseUrl}/4`)
       ])
+
       const { name } = await response.json()
 
       const slug = name.replace(' ', '-').toLowerCase()
